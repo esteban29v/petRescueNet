@@ -1,0 +1,20 @@
+/* Estilos específicos para pantallas entre 481px y 768px */
+@media (min-width: 769px) and (max-width: 1279px) {
+  div.body {
+    width: 100%;
+  }
+}
+
+/* Estilos específicos para pantallas entre 481px y 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  div.body {
+    width: 100%;
+  }
+}
+
+/* Estilos específicos para pantallas entre 481px y 768px */
+@media (min-width: 1px) and (max-width: 480px) {
+  div.body {
+    width: 100%;
+  }
+}

@@ -1,0 +1,71 @@
+.petCarouselComponent {
+    margin: 12px;
+}
+
+.petCarouselCard {
+    background-color: white;
+    color: black;
+    margin: 12px;
+    /* height: 450px; */
+    border-radius: 8px;
+    box-shadow: 0px 3px 5px #00000033;
+    padding: 12px;
+}
+
+.petCarouselCard img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: -webkit-fill-available;
+    height: 250px;
+    border-radius: 8px;
+}
+
+.petCarouselCard h3 { 
+    color: #72BF78;
+    margin: 10px 0 5px
+}
+
+.petCarouselCard .title1 { 
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.petCarouselCard .title1 { 
+    margin: 0 5px;
+    color: #666;
+}
+
+.petCarouselCard .title1 { 
+    color: #444;
+    font-style: italic;
+}
+
+.petCarouselCard button {
+    background-color: var(--primary-green);
+    padding: 12px;
+    border-radius: 6px;
+    color: white;
+    margin: 16px auto;
+    transition: 0.35s;
+    border: none;
+}
+
+.petCarouselCard button:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+.petCarouselTitle {
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0px 3px 3px #00000057;
+    text-align: center;
+    font-size: 50px;
+}
+
+@media (max-width: 768px) {
+    .petCarouselTitle {
+        font-size: 32px;
+    }
+}

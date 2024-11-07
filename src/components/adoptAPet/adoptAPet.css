@@ -1,0 +1,74 @@
+.AdoptAPet {
+  padding: 20px 0;
+  background-color: var(--tertiary-green);
+}
+
+.AdoptAPet h1 {
+  font-size: 2.5em;
+  color: green;
+}
+
+.carouselAdoptAPet-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.carouselAdoptAPet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  transition: transform 0.5s ease;
+}
+
+.carouselAdoptAPet.is-transitioning {
+  transition: transform 0.5s ease;
+}
+
+.carouselAdoptAPet-item {
+  background-color: rgb(255, 255, 255);
+  color: #333;
+  padding: 1.5rem;
+  border-radius: 16px;
+  flex: 0 0 33.33%;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  width: 400px;
+  height: 500px;
+}
+
+.carouselAdoptAPet-item img{
+  width: -webkit-fill-available;
+  height: 200px;
+}
+
+.carouselAdoptAPet-item.center {
+  opacity: 1;
+  transform: scale(1);
+  box-shadow: 0px 4px 7px #0000003b;
+}
+
+.carouselAdoptAPet-item.left,
+.carouselAdoptAPet-item.right {
+  opacity: 0.7;
+  transform: scale(0.8);
+}
+
+.carouselAdoptAPet-item.hidden {
+  display: none;
+}
+
+.carouselAdoptAPet-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: green;
+  z-index: 999;
+}
