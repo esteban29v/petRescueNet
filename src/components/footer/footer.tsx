@@ -13,7 +13,6 @@ const Footer: React.FC = () => {
           <h4>Enlaces Rápidos</h4>
           <ul>
             <li><a href="/acerca">Acerca de</a></li>
-            <li><a href="/productos">Productos</a></li>
             <li><a href="/contacto">Contáctenos</a></li>
           </ul>
         </div>

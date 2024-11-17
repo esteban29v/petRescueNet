@@ -1,0 +1,15 @@
+/* src/pages/acerca/acerca.css */
+.acerca-page {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .acerca-page h1 {
+    color: #2c3e50;
+  }
+  
+  .acerca-page p {
+    font-size: 1.2rem;
+    color: #34495e;
+  }
+  

@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';  // Importa Link para navegación sin recarga
 import './header.css';
-import './header-responsive.css'
+import './header-responsive.css';
 
 const Header: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);  // Estado para el menú hamburguesa
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+    setIsMenuOpen(!isMenuOpen);  // Cambia el estado del menú
   };
 
   return (
@@ -18,17 +19,18 @@ const Header: React.FC = () => {
         <h1 className="logo-text">Pet Rescue Net</h1>
       </div>
 
+      {/* Menú de navegación */}
       <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
         <ul>
-          <li><a href="/productos">Conoce nuestros productos</a></li>
-          <li><a href="/contacto">Contáctenos</a></li>
-          <li><a href="/acerca">Acerca de</a></li>
+          <li><Link to="/contacto">Contáctenos</Link></li>
+          <li><Link to="/acerca">Acerca de</Link></li>
           <span className='noLoginMenu'>&nbsp;</span>
-          <li className="loginBtn"><a href="/login">Iniciar sesión</a></li>
-          <li><a href="/register">Regístrate</a></li>
+          <li className="loginBtn"><Link to="/login">Iniciar sesión</Link></li>
+          <li><Link to="/register">Regístrate</Link></li>
         </ul>
       </nav>
 
+      {/* Botón de menú hamburguesa */}
       <button className="hamburger" onClick={toggleMenu}>
         <span className="hamburger-line"></span>
         <span className="hamburger-line"></span>
