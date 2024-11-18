@@ -2,6 +2,12 @@
 import React, { useState } from 'react';
 import './feedContent.css';
 
+interface Comment {
+  user: string;
+  text: string;
+  userProfileImage: string; // Nueva propiedad para la imagen de perfil del usuario
+}
+
 interface Post {
   id: number;
   petName: string;
@@ -11,7 +17,7 @@ interface Post {
   title: string;
   userName: string;
   userProfileImage: string;
-  comments: { user: string; text: string }[];
+  comments: Comment[];
   isFound: boolean;
   showMoreComments: boolean;
 }
@@ -30,11 +36,23 @@ const FeedContent: React.FC<FeedContentProps> = ({ filter }) => {
       description: "Perro perdido, tiene collar azul. Responde al nombre de Rex.",
       title: "Perro perdido en Chapinero",
       userName: "Juan Pérez",
-      userProfileImage: "https://via.placeholder.com/50",
+      userProfileImage: "/users/user10.png",
       comments: [
-        { user: "Pedro Martínez", text: "¡Lo vi por la calle! Está cerca del parque." },
-        { user: "Maria López", text: "¿Sabes si está con collar?" },
-        { user: "Carlos Sánchez", text: "¡Espero que lo encuentren pronto!" },
+        { 
+          user: "Pedro Martínez", 
+          text: "¡Lo vi por la calle! Está cerca del parque.", 
+          userProfileImage: "/users/user2.png" // URL de la imagen personalizada
+        },
+        { 
+          user: "Maria López", 
+          text: "¿Sabes si está con collar?", 
+          userProfileImage: "/users/user3.png" // URL de la imagen personalizada
+        },
+        { 
+          user: "Carlos Sánchez", 
+          text: "¡Espero que lo encuentren pronto!", 
+          userProfileImage: "/users/user4.png" // URL de la imagen personalizada
+        },
       ],
       isFound: false,
       showMoreComments: false,
@@ -47,11 +65,23 @@ const FeedContent: React.FC<FeedContentProps> = ({ filter }) => {
       description: "Gato perdido, con ojos amarillos. Lleva un collar rojo.",
       title: "Gata perdida en Usaquén",
       userName: "Ana García",
-      userProfileImage: "https://via.placeholder.com/50",
+      userProfileImage: "/users/user5.png",
       comments: [
-        { user: "Laura Ruiz", text: "La vi cerca de la tienda de abarrotes." },
-        { user: "Luis Ramírez", text: "¿Alguien la ha visto más cerca del centro comercial?" },
-        { user: "Elena Pérez", text: "¡Espero que regrese pronto!" },
+        { 
+          user: "Laura Ruiz", 
+          text: "La vi cerca de la tienda de abarrotes.", 
+          userProfileImage: "/users/user6.png" // URL de la imagen personalizada
+        },
+        { 
+          user: "Luis Ramírez", 
+          text: "¿Alguien la ha visto más cerca del centro comercial?", 
+          userProfileImage: "/users/user7.png" // URL de la imagen personalizada
+        },
+        { 
+          user: "Elena Pérez", 
+          text: "¡Espero que regrese pronto!", 
+          userProfileImage: "/users/user8.png" // URL de la imagen personalizada
+        },
       ],
       isFound: false,
       showMoreComments: false,
@@ -64,11 +94,23 @@ const FeedContent: React.FC<FeedContentProps> = ({ filter }) => {
       description: "Gata perdida, es blanca con manchas negras. Lleva collar con campanita.",
       title: "Gata perdida en La Candelaria",
       userName: "Carlos Mendoza",
-      userProfileImage: "https://via.placeholder.com/50",
+      userProfileImage: "/users/user9.png",
       comments: [
-        { user: "Elena Pérez", text: "La vi cerca del Museo de Oro." },
-        { user: "Miguel González", text: "Espero que la encuentren pronto." },
-        { user: "Sofía Rodríguez", text: "Yo también la vi, estaba cerca de la plaza Bolívar." },
+        { 
+          user: "Elena Pérez", 
+          text: "La vi cerca del Museo de Oro.", 
+          userProfileImage: "/users/user10.png" // URL de la imagen personalizada
+        },
+        { 
+          user: "Miguel González", 
+          text: "Espero que la encuentren pronto.", 
+          userProfileImage: "/users/user1.png" // URL de la imagen personalizada
+        },
+        { 
+          user: "Sofía Rodríguez", 
+          text: "Yo también la vi, estaba cerca de la plaza Bolívar.", 
+          userProfileImage: "/users/user2.png" // URL de la imagen personalizada
+        },
       ],
       isFound: false,
       showMoreComments: false,
@@ -81,11 +123,23 @@ const FeedContent: React.FC<FeedContentProps> = ({ filter }) => {
       description: "Perro de color café con blanco. Tiene una cicatriz en la oreja izquierda.",
       title: "Perro perdido en Teusaquillo",
       userName: "Luis Herrera",
-      userProfileImage: "https://via.placeholder.com/50",
+      userProfileImage: "/users/user3.png",
       comments: [
-        { user: "Sara Gómez", text: "Lo vi en el parque Simón Bolívar." },
-        { user: "Andrés Romero", text: "Estaba cerca de la estación de Transmilenio." },
-        { user: "Jorge Martín", text: "¡Espero que lo encuentren pronto!" },
+        { 
+          user: "Sara Gómez", 
+          text: "Lo vi en el parque Simón Bolívar.", 
+          userProfileImage: "/users/user4.png" // URL de la imagen personalizada
+        },
+        { 
+          user: "Andrés Romero", 
+          text: "Estaba cerca de la estación de Transmilenio.", 
+          userProfileImage: "/users/user5.png" // URL de la imagen personalizada
+        },
+        { 
+          user: "Jorge Martín", 
+          text: "¡Espero que lo encuentren pronto!", 
+          userProfileImage: "/users/user6.png" // URL de la imagen personalizada
+        },
       ],
       isFound: false,
       showMoreComments: false,
@@ -97,7 +151,7 @@ const FeedContent: React.FC<FeedContentProps> = ({ filter }) => {
       setPosts(posts.map(post =>
         post.id === postId ? { 
           ...post, 
-          comments: [...post.comments, { user: "Usuario Anónimo", text: comment }] 
+          comments: [...post.comments, { user: "Usuario Anónimo", text: comment, userProfileImage: "/users/user7.png" }] 
         } : post
       ));
     }
@@ -160,7 +214,7 @@ const FeedContent: React.FC<FeedContentProps> = ({ filter }) => {
                 {post.comments.slice(0, post.showMoreComments ? post.comments.length : 1).map((comment, index) => (
                   <li key={index} className="comment">
                     <div className="comment-user">
-                      <img src="https://via.placeholder.com/30" alt={comment.user} className="comment-avatar" />
+                      <img src={comment.userProfileImage} alt={comment.user} className="comment-avatar" />
                       <strong>{comment.user}</strong>
                     </div>
                     <p>{comment.text}</p>
