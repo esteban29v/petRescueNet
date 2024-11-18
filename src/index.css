@@ -1,5 +1,5 @@
 :root {
-  font-family: "Work Sans", sans-serif;
+  font-family: "ProductSans", sans-serif;
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  font-family: 'anone';
+  font-family: 'ProductSans';
   src: url('./assets/fonts/Product_Sans_Regular.ttf');
 }
 
@@ -31,6 +31,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "ProductSans", sans-serif;
 }
 
 hr{

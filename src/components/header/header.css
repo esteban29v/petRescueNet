@@ -62,10 +62,24 @@
 
 .logo-text {
   padding-right: 2rem;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
   color: #ffffff;
-  font-family: Arial, sans-serif;
+  transition: 0.35s;
+}
+
+.logo-text a{
+  color: inherit;
+  text-decoration: none;
+  transition: 0.35s;
+}
+
+.logo-text a:hover{
+  color: var(--accent-yellow);
+}
+
+.logo-text:hover{
+  transform: scale(1.02);
 }
 
 .hamburger {
