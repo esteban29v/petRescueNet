@@ -1,0 +1,285 @@
+/* src/pages/profilePage.css */
+
+/* Contenedor general del perfil */
+.profile-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Contenedor de la información del perfil con fondo distintivo */
+.profile-info-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 40px;  /* Añadido espacio entre la info de perfil y las publicaciones */
+}
+
+/* Encabezado del perfil dentro de la tarjeta */
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 16px;
+}
+
+.profile-header h2 {
+    color: #333;  /* Aseguramos que el nombre del usuario sea legible */
+    font-size: 24px;
+}
+
+/* Detalles del perfil */
+.profile-details h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333; /* Contraste adecuado para los títulos */
+}
+
+.profile-details p {
+    font-size: 16px;
+    color: #555; /* Mejor contraste para los textos */
+}
+
+.edit-photo-link,
+.edit-profile-link {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.edit-photo-link:hover, .edit-profile-link:hover {
+    text-decoration: underline;
+}
+
+/* Sección de publicaciones */
+.feed-section {
+    margin-top: 40px;
+}
+
+.feed-section h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilos generales de FeedContent */
+.feed-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .feed-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .feed-content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Estilos de las publicaciones */
+.post {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    width: 50vw;
+    min-width: 410px;
+    margin: 0 auto;
+}
+
+.post:hover {
+    transform: scale(1.02);
+}
+
+/* Header de la publicación */
+.post-header {
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-name {
+    font-weight: 600;
+    color: #333;  /* Texto oscuro para mejorar el contraste */
+}
+
+.post-location {
+    font-size: 14px;
+    color: #888;
+    margin-left: auto;
+}
+
+/* Cuerpo de la publicación */
+.post-body {
+    padding: 16px;
+}
+
+.post-info-title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #333; /* Contraste adecuado */
+}
+
+.post-info-pet-name {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #444; /* Contraste adecuado */
+}
+
+.post-info-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 16px;
+}
+
+/* Imagen de la mascota */
+.pet-image {
+    min-width: 378px;
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Acciones de la publicación */
+.post-actions {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.found-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.found-btn.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Estilos de los comentarios */
+.comments-section {
+    margin-top: 20px;
+}
+
+.comments-section h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;  /* Aseguramos un buen contraste */
+}
+
+.comments-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.comment {
+    font-size: 16px;
+    color: #444;  /* Mejor contraste para los comentarios */
+    margin-bottom: 12px;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.comment:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.comment-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.comment-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.comment p {
+    margin-top: 6px;
+}
+
+textarea {
+    width: 100%;
+    padding: 14px;
+    margin-top: 12px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+}
+
+textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.show-more-btn {
+    background-color: transparent;
+    color: #4CAF50;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 8px;
+}
+
+.show-more-btn:hover {
+    color: #45a049;
+}

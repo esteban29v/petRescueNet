@@ -1,5 +1,5 @@
 // src/pages/home/home.tsx
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from '../../components/header/header';  // Componente Header
 import './home.css';
@@ -14,6 +14,7 @@ import Contacto from '../contacto/contacto';    // Página de contacto
 import Acerca from '../acerca/acerca';          // Página de acerca
 
 import FeedPage from '../feed/FeedPage';  // Importa la nueva página de Feed
+import ProfilePage from '../profile/ProfilePage'; // Importa la página de perfil
 
 const HomePage: React.FC = () => {
   return (
@@ -27,6 +28,7 @@ const HomePage: React.FC = () => {
             <Route path="/contacto" element={<Contacto />} />
             <Route path="/acerca" element={<Acerca />} />
             <Route path="/feedHome" element={<FeedPage />} />  {/* Ruta del feed */}
+            <Route path="/profile" element={<ProfilePage />} />  {/* Ruta de perfil */}
           </Routes>
         </div>
         <Footer />

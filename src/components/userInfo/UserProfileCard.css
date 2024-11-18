@@ -1,0 +1,54 @@
+/* src/components/UserProfileCard.css */
+
+/* Contenedor de la información del perfil con fondo distintivo */
+.profile-info-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+/* Encabezado del perfil dentro de la tarjeta */
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 16px;
+}
+
+.profile-header h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+/* Detalles del perfil */
+.profile-details h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+.profile-details p {
+    font-size: 16px;
+    color: #555;
+}
+
+.edit-photo-link,
+.edit-profile-link {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.edit-photo-link:hover, .edit-profile-link:hover {
+    text-decoration: underline;
+}
