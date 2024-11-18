@@ -14,7 +14,7 @@
     "animal": "Gato",
     "edad": "3 años",
     "sexo": "Hembra",
-    "imagen": "/pets/pet2.jpeg",
+    "imagen": "/pets/cat.jpg",
     "descripcion": "Gata tranquila y cariñosa, le encanta acurrucarse."
   },
   {
@@ -32,7 +32,7 @@
     "animal": "Gato",
     "edad": "2 años",
     "sexo": "Hembra",
-    "imagen": "/pets/pet4.jpeg",
+    "imagen": "/pets/cat2.jpeg",
     "descripcion": "Gata curiosa y juguetona, disfruta estar cerca de personas."
   },
   {
@@ -41,7 +41,7 @@
     "animal": "Perro",
     "edad": "6 años",
     "sexo": "Macho",
-    "imagen": "/pets/pet5.jpeg",
+    "imagen": "/pets/dog.jpeg",
     "descripcion": "Perro enérgico y leal, necesita actividad diaria."
   },
   {
@@ -50,7 +50,7 @@
     "animal": "Gato",
     "edad": "5 años",
     "sexo": "Hembra",
-    "imagen": "/pets/pet6.jpeg",
+    "imagen": "/pets/cat3.jpeg",
     "descripcion": "Gata grande y dulce, ideal para hogares tranquilos."
   },
   {
@@ -59,7 +59,7 @@
     "animal": "Perro",
     "edad": "3 años",
     "sexo": "Macho",
-    "imagen": "/pets/pet7.jpeg",
+    "imagen": "/pets/dog2.jpg",
     "descripcion": "Amoroso y sociable, se lleva bien con otros perros."
   },
   {
@@ -68,7 +68,7 @@
     "animal": "Gato",
     "edad": "1 año",
     "sexo": "Hembra",
-    "imagen": "/pets/pet8.jpeg",
+    "imagen": "/pets/cat4.jpeg",
     "descripcion": "Gata activa y juguetona, le gusta explorar y saltar."
   },
   {
@@ -77,7 +77,7 @@
     "animal": "Perro",
     "edad": "2 años",
     "sexo": "Macho",
-    "imagen": "/pets/pet9.jpeg",
+    "imagen": "/pets/dog4.jpeg",
     "descripcion": "Husky energético y fuerte, ideal para climas fríos."
   },
   {
@@ -86,7 +86,7 @@
     "animal": "Gato",
     "edad": "4 años",
     "sexo": "Macho",
-    "imagen": "/pets/pet10.jpeg",
+    "imagen": "/pets/cat5.jpg",
     "descripcion": "Gato sin pelo y amigable, requiere cuidados especiales."
   }
 ]
