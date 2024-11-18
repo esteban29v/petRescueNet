@@ -1,0 +1,92 @@
+[
+  {
+    "nombre": "Firulais",
+    "raza": "Labrador",
+    "animal": "Perro",
+    "edad": "5 años",
+    "sexo": "Macho",
+    "imagen": "/pets/pet1.jpg",
+    "descripcion": "Un perro amigable y activo, ideal para familias."
+  },
+  {
+    "nombre": "Pelusa",
+    "raza": "Persa",
+    "animal": "Gato",
+    "edad": "3 años",
+    "sexo": "Hembra",
+    "imagen": "/pets/pet2.jpeg",
+    "descripcion": "Gata tranquila y cariñosa, le encanta acurrucarse."
+  },
+  {
+    "nombre": "Max",
+    "raza": "Bulldog",
+    "animal": "Perro",
+    "edad": "4 años",
+    "sexo": "Macho",
+    "imagen": "/pets/pet3.jpeg",
+    "descripcion": "Bulldog fiel y protector, busca un hogar con espacio."
+  },
+  {
+    "nombre": "Mia",
+    "raza": "Siamesa",
+    "animal": "Gato",
+    "edad": "2 años",
+    "sexo": "Hembra",
+    "imagen": "/pets/pet4.jpeg",
+    "descripcion": "Gata curiosa y juguetona, disfruta estar cerca de personas."
+  },
+  {
+    "nombre": "Rocky",
+    "raza": "Pastor Alemán",
+    "animal": "Perro",
+    "edad": "6 años",
+    "sexo": "Macho",
+    "imagen": "/pets/pet5.jpeg",
+    "descripcion": "Perro enérgico y leal, necesita actividad diaria."
+  },
+  {
+    "nombre": "Nina",
+    "raza": "Maine Coon",
+    "animal": "Gato",
+    "edad": "5 años",
+    "sexo": "Hembra",
+    "imagen": "/pets/pet6.jpeg",
+    "descripcion": "Gata grande y dulce, ideal para hogares tranquilos."
+  },
+  {
+    "nombre": "Buddy",
+    "raza": "Golden Retriever",
+    "animal": "Perro",
+    "edad": "3 años",
+    "sexo": "Macho",
+    "imagen": "/pets/pet7.jpeg",
+    "descripcion": "Amoroso y sociable, se lleva bien con otros perros."
+  },
+  {
+    "nombre": "Luna",
+    "raza": "Bengala",
+    "animal": "Gato",
+    "edad": "1 año",
+    "sexo": "Hembra",
+    "imagen": "/pets/pet8.jpeg",
+    "descripcion": "Gata activa y juguetona, le gusta explorar y saltar."
+  },
+  {
+    "nombre": "Thor",
+    "raza": "Husky Siberiano",
+    "animal": "Perro",
+    "edad": "2 años",
+    "sexo": "Macho",
+    "imagen": "/pets/pet9.jpeg",
+    "descripcion": "Husky energético y fuerte, ideal para climas fríos."
+  },
+  {
+    "nombre": "Simba",
+    "raza": "Esfinge",
+    "animal": "Gato",
+    "edad": "4 años",
+    "sexo": "Macho",
+    "imagen": "/pets/pet10.jpeg",
+    "descripcion": "Gato sin pelo y amigable, requiere cuidados especiales."
+  }
+]

@@ -1,0 +1,63 @@
+/* Estilos específicos para pantallas entre 481px y 768px */
+@media (min-width: 769px) and (max-width: 1279px) {
+    
+  }
+  
+  /* Estilos específicos para pantallas entre 481px y 768px */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .logo-text {
+        padding-right: 2rem;
+        font-size: 24px;
+        text-align: center;
+        font-weight: bold;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+    }
+  }
+  
+  /* Estilos específicos para pantallas entre 481px y 768px */
+  @media (min-width: 1px) and (max-width: 480px) {
+    .logo-text {
+        padding-right: 2rem;
+        font-size: 24px;
+        text-align: center;
+        font-weight: bold;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+    }
+  }
+  
+@media (max-width: 1279px) {
+  .nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #72BF78;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .nav.open ul {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .logo-text {
+    border-right: none;
+  }
+}

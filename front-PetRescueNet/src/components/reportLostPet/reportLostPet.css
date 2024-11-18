@@ -1,0 +1,119 @@
+.reportar-mascota {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que las secciones se acomoden en filas en pantallas pequeñas */
+  }
+
+.reportar-mascota-title{
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 0px 3px 3px #00000057;
+}
+  
+  .info-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    max-width: 100%;
+  }
+  
+  .image-hope {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .text-hope {
+    font-size: 1.2em;
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    padding: 0 20px;
+  }
+  
+  .form-right {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%; /* Asegura que el formulario se ajuste en pantallas pequeñas */
+  }
+  
+  .form-right h2 {
+    font-size: 1.8em;
+    text-align: center;
+    color: #72BF78;
+    margin-bottom: 20px;
+  }
+  
+  .form label {
+    display: block;
+    margin-bottom: 10px;
+    color: gray;
+  }
+  
+  .form input, .form select, .form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .form input[type="file"] {
+    padding: 3px;
+  }
+  
+  .submit-btn {
+    background-color: var(--primary-green);
+    color: white;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    transition: 0.35s;
+  }
+  
+  .submit-btn:hover {
+    background-color: green;
+  }
+  
+  @media (max-width: 768px) {
+    .reportar-mascota {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .info-left {
+      padding-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .form-right {
+      width: 100%;
+      margin-top: 20px;
+    }
+  
+    .form-right h2 {
+      font-size: 1.6em;
+    }
+  
+    .form input, .form select {
+      font-size: 0.9em;
+    }
+  
+    .submit-btn {
+      font-size: 1em;
+      padding: 12px 18px;
+    }
+  }
+  
