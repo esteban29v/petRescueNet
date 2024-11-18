@@ -1,10 +1,9 @@
 /* src/pages/acerca/acerca.css */
 
 :root {
-  --primary-color: #72bf78;
-  --secondary-color: #a0d683;
-  --text-color: #34495e;
-  --font-family: 'Arial', sans-serif;
+  --primary-color: #72bf78!important;
+  --secondary-color: #a0d683!important;
+  --text-color: #34495e!important;
 }
 
 .acerca-page {

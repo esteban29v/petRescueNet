@@ -26,7 +26,7 @@ const Header: React.FC = () => {
           <li><Link to="/acerca">Acerca de</Link></li>
           <span className='noLoginMenu'>&nbsp;</span>
           <li className="loginBtn"><Link to="/login">Iniciar sesión</Link></li>
-          <li><Link to="/register">Regístrate</Link></li>
+          <li><Link to="/signup">Regístrate</Link></li>
         </ul>
       </nav>
 

@@ -1,9 +1,9 @@
 /* src/pages/contacto/contacto.css */
 
 :root {
-  --primary-color: #72BF78;
-  --background-color: #A0D683;
-  --text-color: #333;
+  --primary-color: #72BF78!important;
+  --background-color: #A0D683!important;
+  --text-color: #333!important;
   --border-radius: 8px;
   --form-width: 100%;
   --form-width-lg: 100%;
